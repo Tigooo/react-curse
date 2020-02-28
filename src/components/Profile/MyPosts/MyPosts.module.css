@@ -1,0 +1,14 @@
+.content {
+    grid-area: c;
+    background-color: deepskyblue;
+}
+.ava-line {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.postBlock {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}

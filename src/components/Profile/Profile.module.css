@@ -1,0 +1,23 @@
+.content {
+    grid-area: c;
+    background-color: deepskyblue;
+}
+.ava-line {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.ava-line img {
+    width: 200px;
+}
+.ava-line p {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 0 0 15px;
+    margin: 0;
+    line-height: 0.6;
+}
+.postBlock {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
