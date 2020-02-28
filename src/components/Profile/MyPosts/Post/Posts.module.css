@@ -1,5 +1,16 @@
 .item {
     color: wheat;
+    padding-top: 10px;
+}
+.contblock {
+    display: flex;
+    align-items: center;
+}
+.contblock p  {
+    padding-left: 10px;
+}
+.item span  {
+    padding-left: 15px;
 }
 .item img {
     width: 50px;
