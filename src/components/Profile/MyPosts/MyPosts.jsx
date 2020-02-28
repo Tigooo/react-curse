@@ -13,12 +13,9 @@ class MyPosts extends React.Component {
                         <button>Add post</button>
                     </div>
                     <div className={s.item}>
-                        <Posts/>
-                        <Posts/>
-                        <Posts/>
-                        <Posts/>
-                        <Posts/>
-                        <Posts/>
+                        <Posts massage='Hello how are you' like='15'/>
+                        <Posts massage='Barev aper' like='20'/>
+
                     </div>
                 </div>
         )
