@@ -7,10 +7,10 @@ class MyPosts extends React.Component {
         return (
 
                 <div className={s.postBlock}>
-                    my post
+                    My post
                     <div>
-                        <textarea></textarea>
-                        <button>Add post</button>
+                        <textarea className={s.textarea}></textarea>
+                        <button className={s.button}>Add post</button>
                     </div>
                     <div className={s.item}>
                         <Posts massage='Hello how are you' like='15'/>
