@@ -5,7 +5,7 @@ import MyPosts from "./MyPosts/MyPosts";
 class Profile extends React.Component {
     render (){
         return (
-            <div className={s.content}>
+            <div>
                 <div>
                     <img src="./../../img/bg.jpg" alt=""/>
                 </div>

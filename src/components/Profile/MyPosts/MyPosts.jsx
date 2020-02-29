@@ -13,8 +13,8 @@ class MyPosts extends React.Component {
                         <button className={s.button}>Add post</button>
                     </div>
                     <div className={s.item}>
-                        <Posts massage='Hello how are you' like='15'/>
-                        <Posts massage='Barev aper' like='20'/>
+                        <Posts massage='Hello how are you' likesCount='15'/>
+                        <Posts massage='Barev aper' likesCount='20'/>
 
                     </div>
                 </div>
