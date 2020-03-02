@@ -1,15 +1,16 @@
 import React from "react";
-import s from "./Nav.module.css"
+import s from "./Navbar.module.css"
+import {NavLink} from "react-router-dom";
 
-class Nav extends React.Component {
+class Navbar extends React.Component {
     render (){
         return (
             <nav className={s.nav}>
                 <div className={s.item}>
-                    <a href="#">Profile</a>
+                    <NavLink to="/profile" activeClassName={s.active}>Profile</NavLink>
                 </div>
                 <div className={`${s.item} ${s.active}`}>
-                    <a href="#">Massages</a>
+                    <NavLink to="/dialogs" activeClassName={s.active}>Massages</NavLink>
                 </div>
                 <div className={s.item}>
                     <a href="#">News</a>
@@ -25,4 +26,4 @@ class Nav extends React.Component {
     }
 }
 
-export default Nav;
+export default Navbar;
