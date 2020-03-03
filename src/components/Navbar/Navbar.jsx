@@ -9,11 +9,11 @@ class Navbar extends React.Component {
                 <div className={s.item}>
                     <NavLink to="/profile" activeClassName={s.active}>Profile</NavLink>
                 </div>
-                <div className={`${s.item} ${s.active}`}>
+                <div className={s.item}>
                     <NavLink to="/dialogs" activeClassName={s.active}>Massages</NavLink>
                 </div>
                 <div className={s.item}>
-                    <a href="#">News</a>
+                    <NavLink to="/news" activeClassName={s.active}>News</NavLink>
                 </div>
                 <div className={s.item}>
                     <a href="#">Music</a>

@@ -2,36 +2,53 @@ import React from "react";
 import s from "./Dialogs.module.css";
 import {NavLink} from "react-router-dom";
 
-const Dialogs = () => {
+const DialogItem = (props) => {
+    let path = "/dialogs/" + props.id;
     return (
-       <div className={s.dialogs}>
-           <div className={s.dialogsItems}>
-               <div className={s.dialog + ' ' + s.active}>
-                   <NavLink to='/dialogs/1'>Tigran</NavLink>
-               </div>
-               <div className={s.dialog}>
-                   <NavLink to='/dialogs/2'>Pash</NavLink>
-               </div>
-               <div className={s.dialog}>
-                   <NavLink to='/dialogs/3'>Tehmina</NavLink>
-               </div>
-               <div className={s.dialog}>
-                   <NavLink to='/dialogs/4'>Sevak</NavLink>
-               </div>
-               <div className={s.dialog}>
-                   <NavLink to='/dialogs/5'>Gor</NavLink>
-               </div>
-               <div className={s.dialog}>
-                   <NavLink to='/dialogs/6'>Arev</NavLink>
-               </div>
-           </div>
-           <div className={s.maesages}>
-               <div className={s.message}>Hi</div>
-               <div className={s.message}>How is your it-camasutra</div>
-               <div className={s.message}>Yo</div>
+        <div className={s.dialog + ' ' + s.active}>
+            <NavLink to={path}>{props.name}</NavLink>
+        </div>
+    )
+}
 
-           </div>
-       </div>
+const Messages = (props) => {
+    return (
+        <div className={s.message}>{props.message}</div>
+    )
+}
+
+
+
+const Dialogs = () => {
+    let dialogData = [
+        {id: 1, name: 'Tigo'},
+        {id: 2, name: 'Pash'},
+        {id: 3, name: 'Tehmina'},
+        {id: 4, name: 'Sevak'},
+        {id: 5, name: 'Gor'},
+        {id: 6, name: 'Arev'}
+    ];
+    let messagesData = [
+        {id: 1, message: 'Hi'},
+        {id: 2, message: 'How is your it-camasutra'},
+        {id: 3, message: 'Yo'},
+        {id: 4, message: 'Yo'},
+        {id: 5, message: 'Yo'},
+        {id: 6, message: 'Yo'}
+    ];
+
+    let dialogs = dialogData.map( d =>  <DialogItem name={d.name} id={d.id}/>);
+    let messages = messagesData.map( m => <Messages message={m.message}/>);
+
+    return (
+        <div className={s.dialogs}>
+            <div className={s.dialogsItems}>
+                {dialogs}
+            </div>
+            <div className={s.maesages}>
+                {messages}
+            </div>
+        </div>
     )
 }
 
