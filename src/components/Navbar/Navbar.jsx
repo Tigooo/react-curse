@@ -13,7 +13,7 @@ class Navbar extends React.Component {
                     <NavLink to="/dialogs" activeClassName={s.active}>Massages</NavLink>
                 </div>
                 <div className={s.item}>
-                    <NavLink to="/news" activeClassName={s.active}>News</NavLink>
+                    <a herf="#">News</a>
                 </div>
                 <div className={s.item}>
                     <a href="#">Music</a>
