@@ -8,16 +8,15 @@ import {BrowserRouter, Route} from "react-router-dom";
 
 
 const App = (props) => {
-    let profilebza = () => <Profile posts={props.posts}/>;
-    let dialogbaza = () => <Dialogs dialogData={props.dialogData} messagesData={props.messagesData}/>
+    let profilebza = () => <Profile state={props.state.profilePage}/>;
+    let dialogbaza = () => <Dialogs state={props.state.dialogpage}/>
     return (
         <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
-                <Navbar/>
+                <Navbar state={props.state.navbar}/>
                 <div className="app-wrapper-content">
                     <Route path='/dialogs' render={dialogbaza}/>
-                    <Route path='/profile' render={profilebza}/>
                     <Route path='/profile' render={profilebza}/>
                 </div>
 

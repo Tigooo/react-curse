@@ -11,3 +11,6 @@
 .item a.active {
     color: midnightblue;
 }
+.frined {
+    display: flex;
+}
