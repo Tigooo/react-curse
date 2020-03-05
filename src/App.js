@@ -18,6 +18,7 @@ const App = (props) => {
                 <div className="app-wrapper-content">
                     <Route path='/dialogs' render={dialogbaza}/>
                     <Route path='/profile' render={profilebza}/>
+                    <Route path='/profile' render={profilebza}/>
                 </div>
 
             </div>
