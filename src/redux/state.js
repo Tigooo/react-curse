@@ -28,7 +28,9 @@ let state = {
         friends: [
             {id: 1, user: 'Tigo', ava:'https://avatars.mds.yandex.net/get-pdb/1748372/2290e7d1-f820-4e85-aa0b-57c54492a9dc/s1200'},
             {id: 2, user: 'Pash', ava:'https://pngimage.net/wp-content/uploads/2018/06/%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B8-png-5.png'},
-            {id: 3, user: 'Ezo', ava:'https://pngimage.net/wp-content/uploads/2018/06/%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B8-png-9.png'}
+            {id: 3, user: 'Ezo', ava:'https://pngimage.net/wp-content/uploads/2018/06/%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B8-png-9.png'},
+            {id: 3, user: 'Ezo', ava:'https://academvisa.ru/wp-content/uploads/2019/10/avatar-icon-images-4.png'},
+            {id: 3, user: 'Ezo', ava:'https://cdn4.iconfinder.com/data/icons/avatar-circle-1-1/72/5-512.png'},
         ]
     }
 

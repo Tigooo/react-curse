@@ -1,4 +1,9 @@
 
+.frined_block {
+    display: inline-block;
+    width: 33%;
+    margin-top: 3px;
+}
 .frined_block img {
     width: 30px;
 }
