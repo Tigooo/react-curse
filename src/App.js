@@ -8,7 +8,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 
 
 const App = (props) => {
-    let profilebza = () => <Profile state={props.state.profilePage} addPost={props.addPost}/>;
+    let profilebza = () => <Profile state={props.state.profilePage} addPost={props.addPost} chahgeInnerText={props.chahgeInnerText}/>;
     let dialogbaza = () => <Dialogs state={props.state.dialogpage}/>
     return (
         <BrowserRouter>

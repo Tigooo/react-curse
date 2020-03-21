@@ -6,7 +6,8 @@ let state = {
             {id: 1, message: "Hello how are you", likesCount: 11},
             {id: 1, message: "Barev aper", likesCount: 25},
             {id: 1, message: "Barev aper", likesCount: 55}
-        ]
+        ],
+        inputText: {inputT: "gri aper"}
     },
     dialogpage: {
         dialogs: [
@@ -45,6 +46,10 @@ export let addPost = (postMessage) => {
         likesCount: 20
     }
     state.profilePage.posts.push(newPost);
+    RerenderEntireTree(state)
+}
+export let chahgeInnerText = (innertext) => {
+    state.profilePage.inputText = innertext;
     RerenderEntireTree(state)
 }
 
